@@ -1,0 +1,12 @@
+<div class="all-about-book">
+    <div class="book-container">
+        {% for book in book %}
+            <div class="content">
+                <a class="author">{{path('book', {'bookId': book.id}) }}>{{  book.author }}</a>
+                <div class="year">{{ book.year }}</div>
+                <div class="genre">{{ book.genre }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

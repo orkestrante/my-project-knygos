@@ -1,0 +1,11 @@
+<div class="collection">
+    <ul class="book-names">
+    <div class="book">
+        <div class="collection book-container">
+            {% for book in books %}
+                <a href="{{ path('book', {'bookId': book.id}) }}" class="collection-item row">{{ book.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</ul>
+    </div>
